@@ -73,6 +73,8 @@ typedef struct
     unsigned int        flags;  /* Mode flags bitfield              */
     unsigned int        speed_min;  /* speed minimum value          */
     unsigned int        speed_max;  /* speed maximum value          */
+    unsigned int        brightness_min; /*brightness min value      */
+    unsigned int        brightness_max; /*brightness max value      */
     unsigned int        colors_min; /* minimum number of mode colors*/
     unsigned int        colors_max; /* maximum numver of mode colors*/
     
@@ -80,6 +82,7 @@ typedef struct
     | Mode Settings                                                  |
     \*--------------------------------------------------------------*/
     unsigned int        speed;  /* Mode speed parameter value       */
+    unsigned int        brightness; /* Mode brightness value        */
     unsigned int        direction;  /* Mode direction value         */
     unsigned int        color_mode; /* Mode color selection         */
     std::vector<RGBColor>
